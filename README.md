@@ -80,6 +80,32 @@ This command is used to manage branches in a Git repository. A branch is a separ
     -m: The move flag, is used to rename a branch.
     old_branch_name: The current name of the branch you want to rename.
     new_branch_name: The new name of the branch.
+    
+## git checkout
+
+The git checkout command is used to switch between different branches in a Git repository, or to restore files to a specific version.
+
+#### git checkout [branch_name]
+
+    branch_name: The name of the branch you want to switch to.
+
+#### git checkout -b [new_branch_name]
+
+    -b: The option to create a new branch and switch to it.
+    new_branch_name: The name of the new branch you want to create.
+
+#### git checkout [commit_id] -- [file_name]
+
+    commit_id: The ID of the commit you want to restore the file to.
+    --: The separator between the commit ID and the file name.
+    file_name: The name of the file you want to restore.
+
+#### git checkout -- [file_name]
+
+    --: The option to discard changes to the file in the working directory.
+    file_name: The name of the file you want to discard changes to.
+
+It's important to note that when you switch to a different branch, git will update the files in the working directory to reflect the state of the files in the branch you switch to. And when you use git checkout to restore a file to a specific version, it will discard any changes you made to that file in the working directory. Make sure to save your work before using these commands.
 
 ## git merge
 
