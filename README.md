@@ -320,7 +320,8 @@ git archive [commit/branch/tag]
 ## git submodule
 
 This command is used to manage submodules in a Git repository. Submodules are additional Git repositories that are included in the main repository. This allows you to use code from other projects as a part of your own project, while still keeping them separate and maintainable.
-git submodule add [remote_url] [path]
+
+#### git submodule add [remote_url] [path]
 
     remote_url: The URL of the submodule repository you want to add.
     path: The directory where the submodule repository will be added in your main repository.
