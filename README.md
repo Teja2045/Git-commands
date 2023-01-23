@@ -186,15 +186,15 @@ This command will show the differences between the working directory and the las
 
 This command is used to undo commits and change the state of the repository. It allows you to move the head pointer and change the contents of the working directory.
 
-## git reset [commit]
+#### git reset [commit]
 
     commit: The commit you want to reset to.
 
-## git reset --hard
+#### git reset --hard
 
     --hard: This option discards all changes in the working directory and resets the repository to the specified commit.
 
-## git reset --soft
+#### git reset --soft
 
     --soft: This option keeps the changes in the working directory and undoes the specified commit.
 
